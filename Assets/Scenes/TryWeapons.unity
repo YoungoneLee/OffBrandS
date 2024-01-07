@@ -187,8 +187,8 @@ MonoBehaviour:
   NetworkObserver: {fileID: 0}
   <PrefabId>k__BackingField: 0
   <SpawnableCollectionId>k__BackingField: 0
-  _scenePathHash: 584410112
-  <SceneId>k__BackingField: 2510022318820731634
+  _scenePathHash: 2446003790
+  <SceneId>k__BackingField: 10505506284324295593
   <AssetPathHash>k__BackingField: 0
 --- !u!65 &128947672
 BoxCollider:
@@ -496,8 +496,8 @@ MonoBehaviour:
   NetworkObserver: {fileID: 0}
   <PrefabId>k__BackingField: 0
   <SpawnableCollectionId>k__BackingField: 0
-  _scenePathHash: 584410112
-  <SceneId>k__BackingField: 2510022318837937473
+  _scenePathHash: 2446003790
+  <SceneId>k__BackingField: 10505506286296693387
   <AssetPathHash>k__BackingField: 0
 --- !u!65 &276529434
 BoxCollider:
@@ -1352,8 +1352,8 @@ MonoBehaviour:
   NetworkObserver: {fileID: 0}
   <PrefabId>k__BackingField: 0
   <SpawnableCollectionId>k__BackingField: 0
-  _scenePathHash: 584410112
-  <SceneId>k__BackingField: 2510022318604384198
+  _scenePathHash: 2446003790
+  <SceneId>k__BackingField: 10505506285118506449
   <AssetPathHash>k__BackingField: 0
 --- !u!65 &936436794
 BoxCollider:
@@ -11748,7 +11748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808801474224839720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.87, z: 0}
+  m_LocalPosition: {x: -0.41, y: -0.87, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:

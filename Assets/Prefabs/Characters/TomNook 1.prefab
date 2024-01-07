@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 4330358341866810015}
   - component: {fileID: 7814948703353020740}
   m_Layer: 0
-  m_Name: TomNook
+  m_Name: TomNook 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   <SpawnableCollectionId>k__BackingField: 0
   _scenePathHash: 0
   <SceneId>k__BackingField: 0
-  <AssetPathHash>k__BackingField: 4244299780975377764
+  <AssetPathHash>k__BackingField: 1179906378469339760
 --- !u!114 &2394012538996209316
 MonoBehaviour:
   m_ObjectHideFlags: 0

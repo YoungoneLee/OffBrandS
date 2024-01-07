@@ -37,6 +37,9 @@ public class PlayerController : NetworkBehaviour
             playerCamera = Camera.main;
             playerCamera.transform.position = new Vector3(transform.position.x + cameraXOffset, transform.position.y + cameraYOffset, transform.position.z - cameraZOffset);
             playerCamera.transform.SetParent(transform);
+
+            if (TryGetComponent(out PlayerWeapon playerWeapon))
+                playerWeapon.initializeWeapons(playerCamera.transform);
         }
         else
         {
