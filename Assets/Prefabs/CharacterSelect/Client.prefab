@@ -360,7 +360,7 @@ MonoBehaviour:
   _addedNetworkObject: {fileID: 5930126335999329159}
   _networkObjectCache: {fileID: 5930126335999329159}
   characters:
-  - {fileID: 295898498203329514, guid: ec53dd5fca68141e9abaddf64df6f6c5, type: 3}
+  - {fileID: 295898498203329514, guid: 106b356d76efe429a860ca9705f20f83, type: 3}
   - {fileID: 3443551393450117239, guid: 7e72421ab4d6e4845b442e177977a13b, type: 3}
   characterSelectorPanel: {fileID: 4200576679221488040}
   canvasObject: {fileID: 5930126335902541798}

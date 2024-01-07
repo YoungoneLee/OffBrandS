@@ -169,7 +169,7 @@ MonoBehaviour:
   _initializeOrder: 0
   _defaultDespawnType: 0
   NetworkObserver: {fileID: 0}
-  <PrefabId>k__BackingField: 2
+  <PrefabId>k__BackingField: 3
   <SpawnableCollectionId>k__BackingField: 0
   _scenePathHash: 0
   <SceneId>k__BackingField: 0
@@ -301,6 +301,7 @@ MonoBehaviour:
   _networkObjectCache: {fileID: 1536647021440711822}
   damage: 1
   timeBetweenFire: 1
+  particleSystem: {fileID: 6571521286658588003, guid: 8ccc7884f53204d669ab494ac444f0af, type: 3}
 --- !u!114 &3182421828942276418
 MonoBehaviour:
   m_ObjectHideFlags: 0
