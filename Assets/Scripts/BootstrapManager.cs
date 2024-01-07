@@ -6,25 +6,25 @@ using FishNet.Managing.Scened;
 
 public class BootstrapManager : MonoBehaviour
 {
-    private void Awake()
-    {
-        DontDestroyOnLoad(this);
-    }
+    //private void Awake()
+    //{
+    //    DontDestroyOnLoad(this);
+    //}
 
     private void Update()
     {
         if (!InstanceFinder.IsServer)
             return;
 
+        //if (Input.GetKeyDown(KeyCode.Alpha8))
+        //{
+        //    LoadScene("Scene1");
+        //    UnloadScene("Scene2");
+        //}
+
         if (Input.GetKeyDown(KeyCode.Alpha8))
         {
-            LoadScene("Scene1");
-            UnloadScene("Scene2");
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha9))
-        {
-            LoadScene("Scene2");
+            LoadScene("SampleScene");
             UnloadScene("Scene1");
         }
 
