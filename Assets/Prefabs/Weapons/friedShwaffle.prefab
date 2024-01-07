@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4171566285257284855}
-  m_Layer: 0
+  - component: {fileID: 8537680997599285241}
+  - component: {fileID: 1947893981936567221}
+  m_Layer: 6
   m_Name: friedShwaffle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,6 +34,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8537680997599285241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143498902327435705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <IsNested>k__BackingField: 0
+  <ComponentIndex>k__BackingField: 0
+  <PredictedSpawn>k__BackingField: {fileID: 0}
+  _networkBehaviours: []
+  <ParentNetworkObject>k__BackingField: {fileID: 0}
+  <ChildNetworkObjects>k__BackingField: []
+  SerializedTransformProperties:
+    Position: {x: -5.433131, y: 1.3482368, z: -0.8207837}
+    Rotation: {x: 0, y: 0, z: 0, w: 1}
+    LocalScale: {x: 1, y: 1, z: 1}
+  _isNetworked: 1
+  _isGlobal: 0
+  _initializeOrder: 0
+  _defaultDespawnType: 0
+  NetworkObserver: {fileID: 0}
+  <PrefabId>k__BackingField: 10
+  <SpawnableCollectionId>k__BackingField: 0
+  _scenePathHash: 0
+  <SceneId>k__BackingField: 0
+  <AssetPathHash>k__BackingField: 12003559168130436245
+--- !u!65 &1947893981936567221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143498902327435705}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9549198, y: 0.9250538, z: 1}
+  m_Center: {x: 0.5302534, y: -0.33519766, z: 0}
 --- !u!1 &9112782192406337329
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +90,7 @@ GameObject:
   - component: {fileID: 8447850974178102667}
   - component: {fileID: 4797195785779135022}
   - component: {fileID: 7311566985652680420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fried shwaffle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,9 +105,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9112782192406337329}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.6136799, y: -1.3482368, z: -5.0961375}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0.51, y: -0.84, z: 0.05}
+  m_LocalScale: {x: 30.000002, y: 30.000002, z: 30.000002}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4171566285257284855}
   m_RootOrder: 0

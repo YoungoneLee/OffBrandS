@@ -22,8 +22,10 @@ public class PlayerController : NetworkBehaviour
     [HideInInspector]
     public bool canMove = true;
 
-    [SerializeField]
-    private float cameraYOffset = 0.4f;
+    [SerializeField] private float cameraYOffset = 1.4f;
+    [SerializeField] private float cameraZOffset = 5;
+    [SerializeField] private float cameraXOffset = 5;
+
     private Camera playerCamera;
 
 
@@ -33,7 +35,7 @@ public class PlayerController : NetworkBehaviour
         if (base.IsOwner)
         {
             playerCamera = Camera.main;
-            playerCamera.transform.position = new Vector3(transform.position.x, transform.position.y + cameraYOffset, transform.position.z);
+            playerCamera.transform.position = new Vector3(transform.position.x + cameraXOffset, transform.position.y + cameraYOffset, transform.position.z - cameraZOffset);
             playerCamera.transform.SetParent(transform);
         }
         else
