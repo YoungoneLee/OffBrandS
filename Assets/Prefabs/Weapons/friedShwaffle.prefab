@@ -55,8 +55,8 @@ MonoBehaviour:
   <ParentNetworkObject>k__BackingField: {fileID: 0}
   <ChildNetworkObjects>k__BackingField: []
   SerializedTransformProperties:
-    Position: {x: 0.48770142, y: 0.7899933, z: -3.42}
-    Rotation: {x: -0, y: -0, z: -0, w: 1}
+    Position: {x: -5.433131, y: 1.3482368, z: -0.8207837}
+    Rotation: {x: 0, y: 0, z: 0, w: 1}
     LocalScale: {x: 1, y: 1, z: 1}
   _isNetworked: 1
   _isGlobal: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   NetworkObserver: {fileID: 0}
   <PrefabId>k__BackingField: 10
   <SpawnableCollectionId>k__BackingField: 0
-  _scenePathHash: 584410112
+  _scenePathHash: 0
   <SceneId>k__BackingField: 0
   <AssetPathHash>k__BackingField: 12003559168130436245
 --- !u!65 &1947893981936567221
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deba15d75e54b41ec8242030c8e520d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemScriptable: {fileID: 0}
+  itemScriptable: {fileID: 11400000, guid: 32642f94d86784bf5bfb347a373f06a7, type: 2}
 --- !u!54 &5246374292091677044
 Rigidbody:
   m_ObjectHideFlags: 0
