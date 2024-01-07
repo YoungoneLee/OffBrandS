@@ -269,6 +269,8 @@ MonoBehaviour:
   _networkObjectCache: {fileID: 1841368734037096937}
   damage: 1
   timeBetweenFire: 1
+  bulletImpactPrefab: {fileID: 3504115220933058160, guid: a01b5eec9b0814e78952fa888e9daae3, type: 3}
+  muzzleFlashPrefab: {fileID: 2178081916630505244, guid: 6b8794668698f465dbffd3da4ef7cecb, type: 3}
 --- !u!114 &1425598384916255578
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,8 +5,8 @@ using FishNet.Object;
 
 public class PlayerPickupGuide : NetworkBehaviour
 {
-    [SerializeField] KeyCode pickupButton = KeyCode.E;
-    [SerializeField] KeyCode dropButton = KeyCode.Q;
+    [SerializeField] KeyCode pickupButton = KeyCode.U;
+    [SerializeField] KeyCode dropButton = KeyCode.I;
     [SerializeField] float raycastDistance;
     [SerializeField] LayerMask pickupLayer;
     [SerializeField] Transform pickupPosition;
