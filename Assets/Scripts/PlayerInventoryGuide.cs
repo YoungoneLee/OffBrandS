@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FishNet.Object;
+using TMPro;
+using UnityEngine.UI;
 
 public class PlayerInventoryGuide : NetworkBehaviour
 {
@@ -35,6 +37,10 @@ public class PlayerInventoryGuide : NetworkBehaviour
         worldObjectHolder = GameObject.FindGameObjectWithTag("WorldObjects").transform;
         invPanel = GameObject.FindGameObjectWithTag("InventoryPanel");
         invObjectHolder = GameObject.FindGameObjectWithTag("InventoryObjectHolder").transform;
+
+        if (invPanel.activeSelf)
+            ToggleInventory();
+
     }
 
     private void Update()
@@ -89,10 +95,55 @@ public class PlayerInventoryGuide : NetworkBehaviour
         }
         else if (!invPanel.activeSelf)
         {
+            UpdateInvUI();
             invPanel.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+    }
+
+    void UpdateInvUI()
+    {
+        foreach (Transform child in invObjectHolder)
+            Destroy(child.gameObject);
+
+
+         foreach (InventoryObject invObj in inventoryObjects)
+        {
+            GameObject obj = Instantiate(invCanvasObject, invObjectHolder);
+            obj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = invObj.item.itemName + " - " + invObj.amount;
+            obj.GetComponent<Button>().onClick.AddListener(delegate{ DropItem(invObj.item); });
+        }
+    }
+
+    void DropItem(Item item)
+    {
+        foreach(InventoryObject invObj in inventoryObjects)
+        {
+            if (invObj.item != item)
+                continue;
+            if(invObj.amount > 1 )
+            {
+                invObj.amount--;
+                DropItemsRPC(invObj.item.prefab, cam.transform.position + cam.transform.forward);
+                UpdateInvUI();
+                return;
+            }
+            if(invObj.amount <= 1)
+            {
+                inventoryObjects.Remove(invObj);
+                DropItemsRPC(invObj.item.prefab, cam.transform.position + cam.transform.forward);
+                UpdateInvUI();
+                return;
+            }
+        }
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    void DropItemsRPC(GameObject prefab, Vector3 position)
+    {
+        GameObject drop = Instantiate(prefab, position, Quaternion.identity, worldObjectHolder);
+        ServerManager.Spawn(drop);
     }
 
 
