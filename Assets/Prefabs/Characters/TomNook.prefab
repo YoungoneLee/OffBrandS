@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 6427488847581828211}
   - component: {fileID: 3182421828942276418}
   - component: {fileID: 124240790085381143}
+  - component: {fileID: 4330358341866810015}
   m_Layer: 0
   m_Name: TomNook
   m_TagString: Untagged
@@ -231,7 +232,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295898498203329514}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7cf32ea5905548ae9b1d57fa837ed09, type: 3}
   m_Name: 
@@ -298,7 +299,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295898498203329514}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3703c5dcb306f42b4bb1ee1033264b8d, type: 3}
   m_Name: 
@@ -338,6 +339,29 @@ MonoBehaviour:
   cameraYOffset: 0.4
   cameraZOffset: 0
   cameraXOffset: 0
+--- !u!114 &4330358341866810015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295898498203329514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7638fef5308490a84dd6d0d662b12d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 255
+  _addedNetworkObject: {fileID: 1536647021440711822}
+  _networkObjectCache: {fileID: 0}
+  inventoryObjects: []
+  invCanvasObject: {fileID: 5453149734568843249, guid: 12f2f024011ba4bed95833a7b9217b78, type: 3}
+  inventoryButton: 9
+  pickupLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  pickupDistance: 5
+  pickupButton: 101
 --- !u!1 &616756324025793844
 GameObject:
   m_ObjectHideFlags: 0
