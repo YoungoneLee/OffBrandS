@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3286846238006497917}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.51, z: -0.162}
+  m_LocalPosition: {x: 0, y: -0.355, z: -0.162}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -51,6 +51,7 @@ GameObject:
   - component: {fileID: 5826246506700553829}
   - component: {fileID: 1425598384916255578}
   - component: {fileID: 4604772107414999462}
+  - component: {fileID: 1334626533369931423}
   m_Layer: 0
   m_Name: Judge
   m_TagString: Untagged
@@ -67,8 +68,8 @@ Transform:
   m_GameObject: {fileID: 3443551393450117239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.012}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2798681030473844935}
   - {fileID: 8632440093109483157}
@@ -86,7 +87,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.39
+  m_Height: 1.22
   m_Radius: 0.26
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -141,18 +142,19 @@ MonoBehaviour:
   - {fileID: 5826246506700553829}
   - {fileID: 1425598384916255578}
   - {fileID: 4604772107414999462}
+  - {fileID: 1334626533369931423}
   <ParentNetworkObject>k__BackingField: {fileID: 0}
   <ChildNetworkObjects>k__BackingField: []
   SerializedTransformProperties:
     Position: {x: 0, y: 0, z: 0.012}
     Rotation: {x: 0, y: 0, z: 0, w: 1}
-    LocalScale: {x: 1, y: 1, z: 1}
+    LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   _isNetworked: 1
   _isGlobal: 0
   _initializeOrder: 0
   _defaultDespawnType: 0
   NetworkObserver: {fileID: 0}
-  <PrefabId>k__BackingField: 0
+  <PrefabId>k__BackingField: 14
   <SpawnableCollectionId>k__BackingField: 0
   _scenePathHash: 0
   <SceneId>k__BackingField: 0
@@ -284,7 +286,7 @@ MonoBehaviour:
   _networkObjectCache: {fileID: 1841368734037096937}
   pickupButton: 101
   dropButton: 113
-  raycastDistance: 0
+  raycastDistance: 5
   pickupLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -312,6 +314,23 @@ MonoBehaviour:
     m_Bits: 64
   pickupDistance: 5
   pickupButton: 101
+--- !u!114 &1334626533369931423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3443551393450117239}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cf32ea5905548ae9b1d57fa837ed09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 7
+  _addedNetworkObject: {fileID: 1841368734037096937}
+  _networkObjectCache: {fileID: 1841368734037096937}
+  body: {fileID: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &5769378155380320932
 GameObject:
   m_ObjectHideFlags: 0

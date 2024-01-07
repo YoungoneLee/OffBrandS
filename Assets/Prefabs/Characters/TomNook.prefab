@@ -149,6 +149,7 @@ MonoBehaviour:
   - {fileID: 6427488847581828211}
   - {fileID: 3182421828942276418}
   - {fileID: 124240790085381143}
+  - {fileID: 4330358341866810015}
   <ParentNetworkObject>k__BackingField: {fileID: 0}
   <ChildNetworkObjects>k__BackingField: []
   SerializedTransformProperties:
@@ -160,7 +161,7 @@ MonoBehaviour:
   _initializeOrder: 0
   _defaultDespawnType: 0
   NetworkObserver: {fileID: 0}
-  <PrefabId>k__BackingField: 2
+  <PrefabId>k__BackingField: 3
   <SpawnableCollectionId>k__BackingField: 0
   _scenePathHash: 0
   <SceneId>k__BackingField: 0
@@ -299,7 +300,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295898498203329514}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3703c5dcb306f42b4bb1ee1033264b8d, type: 3}
   m_Name: 
@@ -351,9 +352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7638fef5308490a84dd6d0d662b12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 255
+  _componentIndexCache: 7
   _addedNetworkObject: {fileID: 1536647021440711822}
-  _networkObjectCache: {fileID: 0}
+  _networkObjectCache: {fileID: 1536647021440711822}
   inventoryObjects: []
   invCanvasObject: {fileID: 5453149734568843249, guid: 12f2f024011ba4bed95833a7b9217b78, type: 3}
   inventoryButton: 9
